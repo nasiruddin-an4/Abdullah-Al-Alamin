@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import { Linkedin, Mail, Facebook, Instagram } from 'lucide-react';
+import { Linkedin, Mail, Facebook, Instagram, Twitter } from 'lucide-react';
 import Image from 'next/image';
 
 const Hero = () => {
@@ -28,18 +28,23 @@ const Hero = () => {
             <div className="flex flex-col items-center lg:items-start gap-4 lg:gap-6">
               <p className="text-[10px] lg:text-sm font-bold text-slate-400 uppercase tracking-[0.2em]">Connect With Me</p>
               <div className="flex items-center gap-3 lg:gap-4">
-                <a href="#" aria-label="LinkedIn" className="w-10 h-10 lg:w-12 lg:h-12 bg-white text-blue-700 rounded-full shadow-md shadow-blue-900/5 flex items-center justify-center hover:scale-110 hover:shadow-lg transition-all duration-300 border border-slate-100">
+                <a href="https://www.linkedin.com/in/abdullah13/" aria-label="LinkedIn" className="w-10 h-10 lg:w-12 lg:h-12 bg-white text-blue-700 rounded-full shadow-md shadow-blue-900/5 flex items-center justify-center hover:scale-110 hover:shadow-lg transition-all duration-300 border border-slate-100">
                   <Linkedin size={20} strokeWidth={2.5} />
                 </a>
-                <a href="#" aria-label="Facebook" className="w-10 h-10 lg:w-12 lg:h-12 bg-white text-blue-600 rounded-full shadow-md shadow-blue-900/5 flex items-center justify-center hover:scale-110 hover:shadow-lg transition-all duration-300 border border-slate-100">
+                <a href="https://www.facebook.com/abdullah.alamin58" aria-label="Facebook" className="w-10 h-10 lg:w-12 lg:h-12 bg-white text-blue-600 rounded-full shadow-md shadow-blue-900/5 flex items-center justify-center hover:scale-110 hover:shadow-lg transition-all duration-300 border border-slate-100">
                   <Facebook size={20} strokeWidth={2.5} />
                 </a>
-                <a href="#" aria-label="Instagram" className="w-10 h-10 lg:w-12 lg:h-12 bg-white text-pink-600 rounded-full shadow-md shadow-blue-900/5 flex items-center justify-center hover:scale-110 hover:shadow-lg transition-all duration-300 border border-slate-100">
+                <a href="https://www.instagram.com/abdullah_al_alamin" aria-label="Instagram" className="w-10 h-10 lg:w-12 lg:h-12 bg-white text-pink-600 rounded-full shadow-md shadow-blue-900/5 flex items-center justify-center hover:scale-110 hover:shadow-lg transition-all duration-300 border border-slate-100">
                   <Instagram size={20} strokeWidth={2.5} />
                 </a>
-                <a href="mailto:hello@example.com" aria-label="Email" className="w-10 h-10 lg:w-12 lg:h-12 bg-white text-slate-700 rounded-full shadow-md shadow-blue-900/5 flex items-center justify-center hover:scale-110 hover:shadow-lg transition-all duration-300 border border-slate-100">
-                  <Mail size={20} strokeWidth={2.5} />
+                <a
+                  href="https://x.com/alamin_alamin13"
+                  aria-label="Twitter (X)"
+                  className="w-10 h-10 lg:w-12 lg:h-12 bg-white text-slate-700 rounded-full shadow-md shadow-blue-900/5 flex items-center justify-center hover:scale-110 hover:shadow-lg transition-all duration-300 border border-slate-100"
+                >
+                  <Twitter size={20} />
                 </a>
+
               </div>
             </div>
           </div>
