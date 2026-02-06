@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import BackToTop from "./components/BackToTop";
 
 export const metadata = {
   title: "Abdullah Al Alamin",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <BackToTop />
       </body>
     </html>
   );

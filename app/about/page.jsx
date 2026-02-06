@@ -1,18 +1,13 @@
 "use client";
 
 import React from 'react';
-import Image from 'next/image';
 import {
   Award,
   Briefcase,
   GraduationCap,
   Target,
-  TrendingUp,
-  Users,
   Globe,
   ArrowRight,
-  CheckCircle2,
-  Calendar,
   MapPin,
   Star
 } from 'lucide-react';
@@ -42,53 +37,44 @@ export default function AboutPage() {
     }
   ];
 
-  const skills = [
-    "Brand Architecture",
-    "Strategic Communication",
-    "Crisis Management",
-    "Market Intelligence",
-    "Consumer Research",
-    "Trade Activation",
-    "Media Production",
-    "Corporate Affairs"
-  ];
-
   return (
-    <div className="bg-white pt-20">
+    <div className="bg-white">
       {/* Hero Section */}
-      <section className="relative py-24 bg-slate-900 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <div className="absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-blue-600 rounded-full blur-[120px]"></div>
-          <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-indigo-600 rounded-full blur-[120px]"></div>
+      <section className="relative min-h-[75vh] flex items-center bg-[#060a12] pt-32 pb-20 overflow-hidden">
+        {/* Background Decorative Elements */}
+        <div className="absolute inset-0 z-0">
+          <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-blue-600/15 rounded-full blur-[140px]"></div>
+          <div className="absolute bottom-[-10%] left-[-10%] w-[700px] h-[700px] bg-indigo-600/15 rounded-full blur-[140px]"></div>
+          <div className="absolute inset-0 bg-linear-to-b from-blue-900/5 to-transparent"></div>
         </div>
 
         <div className="container mx-auto px-4 md:px-20 relative z-10">
           <div className="max-w-4xl">
-            <span className="inline-block py-1 px-4 rounded-full bg-blue-600/20 text-blue-400 text-xs font-bold tracking-[0.2em] uppercase mb-6">
-              About Abdullah
-            </span>
-            <h1 className="text-5xl lg:text-7xl font-black text-white leading-tight mb-8">
-              Strategist. Leader. <br />
-              <span className="text-blue-500 underline decoration-blue-500/30 underline-offset-8">Visionary.</span>
+            <h1 className="text-6xl md:text-7xl lg:text-[100px] font-bold text-white mb-10">
+              Strategist<br />
+              <span className="text-blue-500 relative inline-block">
+                Visionary
+              </span>
             </h1>
-            <p className="text-lg lg:text-xl text-slate-300 leading-relaxed max-w-2xl font-medium">
-              A dynamic brand leader with over 13 years of expertise in Bangladesh's top FMCG,
+
+            <p className="text-xl lg:text-2xl text-slate-400 leading-relaxed max-w-2xl font-medium border-l-2 border-blue-600/30 pl-8">
+              A dynamic brand leader with over <span className="text-white font-bold">13 years</span> of expertise in Bangladesh's top FMCG,
               building materials, and education sectors.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Main Content */}
+      {/* Main Content Section */}
       <section className="py-24">
         <div className="container mx-auto px-4 md:px-20">
           <div className="grid lg:grid-cols-12 gap-16 lg:gap-24">
 
-            {/* Left Column: Bio & Story */}
+            {/* Left Column: Bio & Values */}
             <div className="lg:col-span-7 space-y-12">
-              <div className="space-y-6">
-                <h2 className="text-3xl lg:text-4xl font-black text-slate-900">Professional Journey</h2>
-                <div className="w-20 h-1.5 bg-blue-600 rounded-full"></div>
+              <div className="space-y-3">
+                <h2 className="text-3xl lg:text-4xl font-bold text-slate-900">Professional Journey</h2>
+                <div className="w-28 h-1 bg-blue-600 rounded-full mb-4"></div>
                 <div className="space-y-6 text-lg text-slate-600 leading-relaxed font-medium">
                   <p>
                     With more than a decade of experience, I have developed a deep-seated passion for
@@ -131,9 +117,9 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Right Column: Experience & Skills */}
-            <div className="lg:col-span-5 space-y-12">
-              <div className="bg-slate-900 rounded-3xl p-8 lg:p-12 text-white shadow-2xl">
+            {/* Right Column: Experience */}
+            <div className="lg:col-span-5">
+              <div className="bg-slate-900 rounded-xl p-8 lg:p-12 text-white">
                 <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
                   <Briefcase className="text-blue-400" /> Career Highlights
                 </h3>
@@ -152,21 +138,45 @@ export default function AboutPage() {
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <div className="bg-blue-50 rounded-3xl p-8 lg:p-10">
-                <h3 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3">
-                  <Award className="text-blue-600" /> Core Expertise
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {skills.map((skill, idx) => (
-                    <span key={idx} className="px-4 py-2 bg-white border border-blue-100 text-blue-700 rounded-xl text-xs font-bold uppercase tracking-wide">
-                      {skill}
-                    </span>
-                  ))}
+      {/* Academic Foundation Section - Separated */}
+      <section className="py-24 bg-blue-50/30 border-y border-blue-100">
+        <div className="container mx-auto px-4 md:px-20">
+          <div className="max-w-4xl">
+            <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Academic Foundation</h2>
+            <div className="w-28 h-1 bg-blue-600 rounded-full mb-12"></div>
+
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white p-8 rounded-2xl border border-blue-100 shadow-sm hover:shadow-md transition-shadow group">
+                <div className="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center mb-6 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                  <GraduationCap size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Masters of Business Administration (MBA)</h3>
+                <p className="text-blue-600 font-semibold mb-4">Major in Marketing</p>
+                <div className="space-y-2">
+                  <p className="text-slate-500 text-sm flex items-center gap-2">
+                    <MapPin size={14} /> Leading University in Bangladesh
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white p-8 rounded-2xl border border-blue-100 shadow-sm hover:shadow-md transition-shadow group">
+                <div className="w-12 h-12 bg-blue-600/10 rounded-xl flex items-center justify-center mb-6 text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                  <Award size={24} />
+                </div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Professional Marketing Certifications</h3>
+                <p className="text-blue-600 font-semibold mb-4">Strategy & Communication</p>
+                <div className="space-y-2">
+                  <p className="text-slate-500 text-sm flex items-center gap-2">
+                    <Globe size={14} /> Reputed Global & Local Institutions
+                  </p>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>

@@ -67,9 +67,11 @@ const About = () => {
                 <Globe size={14} /> EXECUTIVE PROFILE
               </span>
 
-              <h2 className="text-4xl lg:text-6xl font-black text-slate-900 leading-[1.1] tracking-tight">
-                Strategist by Design, <br />
-                <span className="text-blue-600">Leader by Impact.</span>
+              <h2 className="text-4xl lg:text-7xl font-black text-slate-900 leading-[0.95] tracking-tight">
+                Strategist <br />
+                <span className="text-blue-600">by Design,</span> <br />
+                Leader <br />
+                <span className="text-blue-600">by Impact.</span>
               </h2>
 
               <div className="space-y-6 text-lg text-slate-600 leading-relaxed">
